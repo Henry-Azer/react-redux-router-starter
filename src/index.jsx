@@ -11,6 +11,14 @@ import rootReducer from "./store/reducers";
 import Routes from "./router/routes";
 import { BrowserRouter } from "react-router-dom";
 
+import TranslateButton from "./components/buttons/translate-button";
+
+import "./localization/i18n";
+
+import "./styles/styles.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../src/axios-interceptors/axios-interceptors";
+
 const initialState = {};
 const middleware = [thunk];
 const store = createStore(
@@ -26,6 +34,7 @@ root.render(
     <Provider store={store}>
         <BrowserRouter>
             <Routes />
+            <TranslateButton />
         </BrowserRouter>
     </Provider>
 );
