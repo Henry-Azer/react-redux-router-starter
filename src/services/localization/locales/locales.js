@@ -1,7 +1,9 @@
-import { en } from './en';
-import { ar } from './ar';
+import en from './en'
+import ar from './ar'
 
-export const Locales = {
+const Locales = {
   en,
-  ar,
-};
+  ar
+}
+
+export default Locales

@@ -1,25 +1,25 @@
-import React from "react";
-import { Fragment, Suspense } from "react";
-import { Outlet } from "react-router-dom";
+import React, { Suspense } from 'react'
 
-import { Box } from "@mui/material";
-import Typography from "@mui/material/Typography";
+import { Outlet } from 'react-router-dom'
 
-import { useTranslation } from "react-i18next";
+import { Box } from '@mui/material'
+import Typography from '@mui/material/Typography'
 
-export const MainLayout = () => {
-  const { t } = useTranslation();
+import { useTranslation } from 'react-i18next'
+
+function MainLayout() {
+  const { t } = useTranslation()
 
   return (
-    <Fragment>
-      <Box>
-        <Typography style={{ textAlign: "center" }} variant="h4">
-          {t("layout:main:title")}
-        </Typography>
-        <Suspense>
-          <Outlet />
-        </Suspense>
-      </Box>
-    </Fragment>
-  );
-};
+    <Box>
+      <Typography style={{ textAlign: 'center' }} variant="h4">
+        {t('layout:main:title')}
+      </Typography>
+      <Suspense>
+        <Outlet />
+      </Suspense>
+    </Box>
+  )
+}
+
+export default MainLayout

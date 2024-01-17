@@ -1,19 +1,21 @@
-export const ar = {
+const ar = {
   login: {
-    title: 'صفحة تسجيل الدخول',
+    title: 'صفحة تسجيل الدخول'
   },
   profile: {
-    title: 'الصفحة الشخصية',
+    title: 'الصفحة الشخصية'
   },
   layout: {
     base: {
-      title: 'النموذج الاساسي',
+      title: 'النموذج الاساسي'
     },
     main: {
-      title: 'النموذج الرئيسي',
-    },
+      title: 'النموذج الرئيسي'
+    }
   },
   snackbar: {
-    show: 'اظهار اشعار',
-  },
-};
+    show: 'اظهار اشعار'
+  }
+}
+
+export default ar

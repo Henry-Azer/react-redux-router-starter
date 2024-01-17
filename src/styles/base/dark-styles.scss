@@ -5,7 +5,7 @@ $text-color: #fff;
 #root {
   background-color: $background-color;
   color: $text-color;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -14,7 +14,7 @@ $text-color: #fff;
 .button {
   padding: 10px 20px;
   background-color: $text-color;
-  color: $background-color ;
+  color: $background-color;
   border: none;
   border-radius: 5px;
   cursor: pointer;

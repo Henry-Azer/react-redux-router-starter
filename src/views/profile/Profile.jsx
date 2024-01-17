@@ -1,11 +1,13 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
-export const Profile = () => {
-  const { t } = useTranslation();
+function Profile() {
+  const { t } = useTranslation()
 
   return (
-    <div style={{ textAlign: "center" }}>
-      <div>{t("profile:title")}</div>
+    <div style={{ textAlign: 'center' }}>
+      <div>{t('profile:title')}</div>
     </div>
-  );
-};
+  )
+}
+
+export default Profile

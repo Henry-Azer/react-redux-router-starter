@@ -4,8 +4,8 @@
 @import 'tailwindcss/utilities';
 
 @font-face {
-  font-family: "Century Gothic";
-  src: url("../assets/fonts/GOTHIC.TTF") format("truetype");
+  font-family: 'Century Gothic';
+  src: url('../assets/fonts/GOTHIC.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +19,7 @@
 }
 
 * {
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-weight: 300;
 }
 
@@ -29,11 +29,11 @@ body {
 }
 
 .light-theme {
-  @import "./base/light-styles.scss";
+  @import './base/light-styles.scss';
 }
 
 .dark-theme {
-  @import "./base/dark-styles.scss";
+  @import './base/dark-styles.scss';
 }
 
 .prevent-drag {

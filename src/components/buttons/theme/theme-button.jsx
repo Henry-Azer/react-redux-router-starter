@@ -1,11 +1,13 @@
-import { useTheme } from "../../../services/theme/theme-context";
+import { useTheme } from '../../../services/theme/theme-context'
 
-export const ThemeButton = () => {
-  const { theme, toggleTheme } = useTheme();
+function ThemeButton() {
+  const { theme, toggleTheme } = useTheme()
 
   return (
-    <button className="button theme-button" onClick={toggleTheme}>
-      {theme === "light" ? "Dark Mode" : "Light Mode"}
+    <button type="button" className="button theme-button" onClick={toggleTheme}>
+      {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
     </button>
-  );
-};
+  )
+}
+
+export default ThemeButton

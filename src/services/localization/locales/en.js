@@ -1,19 +1,21 @@
-export const en = {
+const en = {
   login: {
-    title: 'Login Page',
+    title: 'Login Page'
   },
   profile: {
-    title: 'Profile Page',
+    title: 'Profile Page'
   },
   layout: {
     base: {
-      title: 'Base Layout',
+      title: 'Base Layout'
     },
     main: {
-      title: 'Main Layout',
-    },
+      title: 'Main Layout'
+    }
   },
   snackbar: {
-    show: 'Show Snackbar',
-  },
-};
+    show: 'Show Snackbar'
+  }
+}
+
+export default en
